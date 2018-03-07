@@ -1,0 +1,54 @@
+* {
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+#navbar {
+	text-align: center;
+	margin: auto;
+}
+
+#wrapper {
+	max-width: 1200px;
+	height: 500px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#wrapper > div {
+	flex: 1;
+}
+
+#map, #contactForm {
+	height: 500px;
+}
+
+#contact {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+#contact > input {
+	width: 100%;
+	margin: 10px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #wrapper {
+    	height: 600px;
+    	width: 100%;
+    	display: flex;
+    	flex-direction: column;
+    }
+
+    #map, #contactForm {
+    	height: 300px;
+    	width: 90%;
+    	margin-right: auto;
+    	margin-left: auto;
+    }
+}

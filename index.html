@@ -1,0 +1,29 @@
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="UTF-8">
+</head>
+<body>
+  <div id="navbar"><span>Google Maps - Javascript API</span></div>
+
+  <div id="wrapper">
+    <div id="map"></div>
+    <div id="contactForm">
+      
+        <form id="contact" action="" method="post">
+            <input id="address" placeholder="Pin Address" type="text" tabindex="1">
+            <input placeholder="Your Name" type="text" tabindex="2" autofocus>
+            <input placeholder="Your Email Address" type="email" tabindex="3" required>
+            <input id="datetime" placeholder="Date" type="datetime-local">
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </form>
+
+    </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_G-STn6yzd0noYl0WumrdiPs5igMtK6A&libraries=places&callback=initMap"
+    async defer></script>
+    <script src="index.js"></script>
+  </div>
+</body>
+</html>
